@@ -65,7 +65,7 @@ select {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-10rem);
   }
 }
 
@@ -80,13 +80,13 @@ select {
     transform: translateY(0);
   }
   60% {
-    transform: translateY(-10px);
+    transform: translateY(-8rem);
   }
   80% {
     transform: translateY(0);
   }
   90% {
-    transform: translateY(-5px);
+    transform: translateY(-5rem);
   }
 }
 
