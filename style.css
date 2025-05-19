@@ -65,10 +65,35 @@ select {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10rem);
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes multiple-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-15px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(-5px);
   }
 }
 
 .bounce {
-  animation: bounce 0.9s ease-in-out;
+  animation: bounce 0.5s ease-in-out;
+}
+
+.multiple-bounce {
+  animation: multiple-bounce 1.2s ease-in-out;
 }
