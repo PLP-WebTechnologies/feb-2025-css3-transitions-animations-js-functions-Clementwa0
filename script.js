@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Function to trigger multiple bounces animation
   function triggerMultipleBounce() {
     // Remove any existing animation class
-    animatedImage.classList.remove("bounce");
+
     animatedImage.classList.remove("multiple-bounce");
     
     // Force browser to recognize the change
