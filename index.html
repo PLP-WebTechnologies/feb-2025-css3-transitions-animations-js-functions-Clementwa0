@@ -1,1 +1,32 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Animation Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Interactive Animation with JavaScript & CSS</h2>
+
+  <!-- Image that bounces -->
+  <img src="https://cdn.dribbble.com/userupload/15107345/file/original-e2bf255f3891dee8cdd5d877f8a0a5f3.jpg?resize=400x0" alt="Bounce Image" class="img-box" id="animatedImage">
+
+  <!-- Trigger Button -->
+  <button class="btn" onclick="triggerBounce()">Click to Bounce</button>
+
+  <!-- Preference Selection -->
+  <div style="text-align:center; margin-top:30px;">
+    <label for="colorSelect">Choose Background Color:</label>
+    <select id="colorSelect" onchange="savePreference()">
+      <option value="#f0f0f0">Default</option>
+      <option value="#fff0f5">Lavender Blush</option>
+      <option value="#f5f5dc">Beige</option>
+      <option value="#d0f0c0">Mint</option>
+    </select>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
