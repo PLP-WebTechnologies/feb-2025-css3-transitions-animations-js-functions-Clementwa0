@@ -8,19 +8,20 @@ document.addEventListener("DOMContentLoaded", function() {
   loadSavedPreference();
   
   // Add event listeners
-  bounceButton.addEventListener("click", triggerBounce);
+  bounceButton.addEventListener("click", triggerMultipleBounce);
   bgColorSelect.addEventListener("change", savePreference);
   
-  // Function to trigger bounce animation
-  function triggerBounce() {
-    // Reset animation by removing and re-adding class
+  // Function to trigger multiple bounces animation
+  function triggerMultipleBounce() {
+    // Remove any existing animation class
     animatedImage.classList.remove("bounce");
+    animatedImage.classList.remove("multiple-bounce");
     
     // Force browser to recognize the change
     void animatedImage.offsetWidth;
     
-    // Add the class back to restart animation
-    animatedImage.classList.add("bounce");
+    // Add multiple bounce animation class
+    animatedImage.classList.add("multiple-bounce");
   }
   
   // Function to save and apply background color preference
